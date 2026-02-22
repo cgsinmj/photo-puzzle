@@ -432,7 +432,7 @@ export default function PhotoPuzzle() {
             e.currentTarget.style.borderColor = "rgba(200,169,110,0.3)";
           }}
         >
-          픽해줌 · PickHeaZoom
+          픽해줌 · PickHaeZoom
         </a>
         <p style={{ fontSize: "0.68rem", color: "#3a3020", marginTop: "5px", letterSpacing: "0.05em" }}>
           네이버 블로그
