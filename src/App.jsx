@@ -399,6 +399,45 @@ export default function PhotoPuzzle() {
       <p style={{ marginTop: "20px", fontSize: "0.72rem", color: "#3a3028", letterSpacing: "0.08em" }}>
         빈 칸과 인접한 조각을 클릭해서 이동하세요
       </p>
+
+      {/* 제작자 / 블로그 */}
+      <div style={{
+        marginTop: "32px",
+        borderTop: "1px solid #1e1a14",
+        paddingTop: "16px",
+        textAlign: "center",
+      }}>
+        <p style={{ fontSize: "0.72rem", color: "#4a4030", letterSpacing: "0.06em", marginBottom: "6px" }}>
+          Made by
+        </p>
+        <a
+          href="https://blog.naver.com/pickhaezoom"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            fontSize: "0.85rem",
+            color: "#c8a96e",
+            letterSpacing: "0.12em",
+            textDecoration: "none",
+            borderBottom: "1px solid rgba(200,169,110,0.3)",
+            paddingBottom: "2px",
+            transition: "color 0.2s, border-color 0.2s",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = "#f0d090";
+            e.currentTarget.style.borderColor = "rgba(240,208,144,0.6)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = "#c8a96e";
+            e.currentTarget.style.borderColor = "rgba(200,169,110,0.3)";
+          }}
+        >
+          픽해줌 · PickHeaZoom
+        </a>
+        <p style={{ fontSize: "0.68rem", color: "#3a3020", marginTop: "5px", letterSpacing: "0.05em" }}>
+          네이버 블로그
+        </p>
+      </div>
     </div>
   );
 }
